@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim/test_pulse_gen_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'

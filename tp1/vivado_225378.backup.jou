@@ -1,0 +1,138 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Jan 30 16:19:35 2025
+# Process ID: 225378
+# Current directory: /nfs/home/m1info2/Documents/vhdl/tp1
+# Command line: vivado
+# Log file: /nfs/home/m1info2/Documents/vhdl/tp1/vivado.log
+# Journal file: /nfs/home/m1info2/Documents/vhdl/tp1/vivado.jou
+# Running On        :secil3.siame.univ-tlse3.fr
+# Platform          :Fedora
+# Operating System  :Fedora Linux 40 (Forty)
+# Processor Detail  :Intel(R) Core(TM) i7-10700T CPU @ 2.00GHz
+# CPU Frequency     :4000.062 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16457 MB
+# Swap memory       :16888 MB
+# Total Virtual     :33345 MB
+# Available Virtual :30298 MB
+#-----------------------------------------------------------
+start_gui
+create_project tp1-vivado /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado -part xc7z020clg400-1
+set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
+set_property  ip_repo_paths  /nfs/xilinx/vivado-library [current_project]
+update_ip_catalog
+set_property target_language VHDL [current_project]
+add_files -norecurse /nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset utils_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen_synth.pre.tcl
+set_property STEPS.SYNTH_DESIGN.TCL.PRE [ get_files /nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen_synth.pre.tcl -of [get_fileset utils_1] ] [get_runs synth_1]
+launch_simulation
+source test_pulse_gen.tcl
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_simulation -mode post-synthesis -type timing
+close_sim
+launch_simulation
+source test_pulse_gen.tcl
+launch_simulation -mode post-synthesis -type timing
+launch_simulation -mode post-synthesis -type timing
+source test_pulse_gen.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_sim simulation_2
+close_sim
+launch_simulation
+source test_pulse_gen.tcl
+current_sim simulation_3
+close_sim
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+source test_pulse_gen.tcl
+run 200 ms
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_pulse_gen.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+run 200 ms
+run 200 ms
+current_design impl_1
+refresh_design
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+file mkdir /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1
+file mkdir /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new
+close [ open /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc w ]
+add_files -fileset constrs_1 /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc
+refresh_design
+set_property target_constrs_file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc [current_fileset -constrset]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+place_ports MCLK K17
+set_property IOSTANDARD LVCMOS33 [get_ports [list MCLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list P]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list RST]]
+set_property is_loc_fixed true [get_ports [list  P]]
+set_property is_loc_fixed true [get_ports [list  RST]]
+place_ports P M14
+place_ports RST R18
+save_constraints
+place_ports P M15
+place_ports P M14
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type timing
+source test_pulse_gen.tcl
+run 200 ms
+run 200 ms
+current_design impl_1
+refresh_design
+synth_design -top pulse_gen -part xc7z020clg400-1 -lint 
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_pulse_gen.tcl
+run 200 ms
+launch_simulation -mode post-implementation -type timing
+source test_pulse_gen.tcl
+run 200 ms
+close_sim
+current_sim simulation_8
+close_sim
+close_sim

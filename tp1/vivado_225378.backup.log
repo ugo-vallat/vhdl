@@ -1,0 +1,1210 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Jan 30 16:19:35 2025
+# Process ID: 225378
+# Current directory: /nfs/home/m1info2/Documents/vhdl/tp1
+# Command line: vivado
+# Log file: /nfs/home/m1info2/Documents/vhdl/tp1/vivado.log
+# Journal file: /nfs/home/m1info2/Documents/vhdl/tp1/vivado.jou
+# Running On        :secil3.siame.univ-tlse3.fr
+# Platform          :Fedora
+# Operating System  :Fedora Linux 40 (Forty)
+# Processor Detail  :Intel(R) Core(TM) i7-10700T CPU @ 2.00GHz
+# CPU Frequency     :4000.062 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16457 MB
+# Swap memory       :16888 MB
+# Total Virtual     :33345 MB
+# Available Virtual :30298 MB
+#-----------------------------------------------------------
+start_gui
+Sourcing tcl script '/nfs/xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-100/E.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-100/E.0/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-35/E.0/1.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-35/E.0/1.1/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty/C.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/basys3/C.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-15t:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/cmod_a7-15t/B.0/board.xml as part xc7a15tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-35t:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/cmod_a7-35t/B.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-100t/D.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-100t/D.0/1.3/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-50t/D.0/1.0/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-50t/D.0/1.3/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys4/B.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4_ddr:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys4_ddr/C.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys_video/A.0/1.1/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/nexys_video/A.0/1.2/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/usb104-a7/B/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/usb104-a7/B/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/usb104-a7/B/1.2/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/usb104-a7/B/1.3/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-100/E.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-100/E.0/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-35/E.0/1.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-35/E.0/1.1/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty/C.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/basys3/C.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-15t:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/cmod_a7-15t/B.0/board.xml as part xc7a15tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-35t:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/cmod_a7-35t/B.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-100t/D.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-100t/D.0/1.3/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-50t/D.0/1.0/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-50t/D.0/1.3/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys4/B.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4_ddr:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys4_ddr/C.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys_video/A.0/1.1/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/nexys_video/A.0/1.2/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+create_project tp1-vivado /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2024.1/data/ip'.
+set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
+set_property  ip_repo_paths  /nfs/xilinx/vivado-library [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/xilinx/vivado-library'.
+set_property target_language VHDL [current_project]
+add_files -norecurse /nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset utils_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen_synth.pre.tcl
+set_property STEPS.SYNTH_DESIGN.TCL.PRE [ get_files /nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen_synth.pre.tcl -of [get_fileset utils_1] ] [get_runs synth_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pulse_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_pulse_gen_behav xil_defaultlib.test_pulse_gen -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_pulse_gen_behav xil_defaultlib.test_pulse_gen -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behaviour of entity xil_defaultlib.pulse_gen [\pulse_gen(max_cpt=10)\]
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_behav -key {Behavioral:sim_1:Functional:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8319.129 ; gain = 109.141 ; free physical = 4797 ; free virtual = 27451
+launch_runs synth_1 -jobs 8
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Thu Jan 30 16:27:57 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Jan 30 16:28:43 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8614.090 ; gain = 0.000 ; free physical = 2608 ; free virtual = 25266
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8676.871 ; gain = 0.000 ; free physical = 4455 ; free virtual = 27113
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8677.871 ; gain = 0.000 ; free physical = 4455 ; free virtual = 27113
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8680.871 ; gain = 3.000 ; free physical = 4453 ; free virtual = 27111
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8680.871 ; gain = 0.000 ; free physical = 4453 ; free virtual = 27111
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8680.871 ; gain = 0.000 ; free physical = 4453 ; free virtual = 27111
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8729.895 ; gain = 49.023 ; free physical = 4453 ; free virtual = 27110
+Read Physdb Files: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8729.895 ; gain = 52.023 ; free physical = 4452 ; free virtual = 27110
+Restored from archive | CPU: 0.020000 secs | Memory: 0.044937 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8729.895 ; gain = 52.023 ; free physical = 4452 ; free virtual = 27110
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9113.848 ; gain = 0.000 ; free physical = 4092 ; free virtual = 26750
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 9338.531 ; gain = 942.762 ; free physical = 3907 ; free virtual = 26565
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9338.531 ; gain = 0.000 ; free physical = 3881 ; free virtual = 26540
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9350.211 ; gain = 0.000 ; free physical = 3837 ; free virtual = 26497
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'
+ERROR: [VRFC 10-2927] 'pulse_gen' has only 0 generics [/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd:56]
+ERROR: [VRFC 10-9458] unit 'behaviour' is ignored due to previous errors [/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd:22]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_pulse_gen_behav xil_defaultlib.test_pulse_gen -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_pulse_gen_behav xil_defaultlib.test_pulse_gen -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_behav -key {Behavioral:sim_1:Functional:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9489.703 ; gain = 0.000 ; free physical = 3653 ; free virtual = 26364
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'
+ERROR: [VRFC 10-2927] 'pulse_gen' has only 0 generics [/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd:56]
+ERROR: [VRFC 10-9458] unit 'behaviour' is ignored due to previous errors [/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd:22]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[2] in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2(INIT=4'b0110)
+Compiling module xil_defaultlib.pulse_gen
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_time_synth -key {Post-Synthesis:sim_1:Timing:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 9676.074 ; gain = 73.820 ; free physical = 3367 ; free virtual = 26049
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/pulse_gen.dcp to /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Jan 30 16:33:18 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan 30 16:34:05 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1398 ; free virtual = 24080
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+Read Physdb Files: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+Restored from archive | CPU: 0.010000 secs | Memory: 0.020538 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9676.074 ; gain = 0.000 ; free physical = 1421 ; free virtual = 24104
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_pulse_gen_behav xil_defaultlib.test_pulse_gen -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_pulse_gen_behav xil_defaultlib.test_pulse_gen -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behaviour of entity xil_defaultlib.pulse_gen [pulse_gen_default]
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_behav -key {Behavioral:sim_1:Functional:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9734.098 ; gain = 0.000 ; free physical = 3367 ; free virtual = 26046
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9734.098 ; gain = 0.000 ; free physical = 3440 ; free virtual = 26124
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9734.098 ; gain = 0.000 ; free physical = 3440 ; free virtual = 26125
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[2] in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2(INIT=4'b0110)
+Compiling module xil_defaultlib.pulse_gen
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_time_synth -key {Post-Synthesis:sim_1:Timing:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 9734.098 ; gain = 0.000 ; free physical = 3375 ; free virtual = 26056
+run 200 ms
+Failure: FIN DE SIMULATION
+Time: 12 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 12 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[2] in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2(INIT=4'b0110)
+Compiling module xil_defaultlib.pulse_gen
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_time_synth -key {Post-Synthesis:sim_1:Timing:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 9807.375 ; gain = 0.996 ; free physical = 3268 ; free virtual = 25985
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/utils_1/imports/synth_1/pulse_gen.dcp with file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/pulse_gen.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Jan 30 16:40:18 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan 30 16:41:19 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/impl_1/runme.log
+run 200 ms
+Failure: FIN DE SIMULATION
+Time: 12 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 12 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+run 200 ms
+Failure: FIN DE SIMULATION
+Time: 24 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 24 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1279 ; free virtual = 23966
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+Read Physdb Files: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+Restored from archive | CPU: 0.030000 secs | Memory: -15.214630 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9891.375 ; gain = 0.000 ; free physical = 1282 ; free virtual = 23967
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+file mkdir /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1
+file mkdir /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new
+close [ open /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc w ]
+add_files -fileset constrs_1 /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 3320 ; free virtual = 26054
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc]
+Finished Parsing XDC File [/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property target_constrs_file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc [current_fileset -constrset]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/utils_1/imports/synth_1/pulse_gen.dcp with file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/pulse_gen.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan 30 17:05:35 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/runme.log
+[Thu Jan 30 17:05:35 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1270 ; free virtual = 23966
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1267 ; free virtual = 23963
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+Read Physdb Files: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+Restored from archive | CPU: 0.020000 secs | Memory: 0.023880 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9947.402 ; gain = 0.000 ; free physical = 1231 ; free virtual = 23928
+place_ports MCLK K17
+set_property IOSTANDARD LVCMOS33 [get_ports [list MCLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list P]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list RST]]
+set_property is_loc_fixed true [get_ports [list  P]]
+set_property is_loc_fixed true [get_ports [list  RST]]
+place_ports P M14
+place_ports RST R18
+save_constraints
+place_ports P M15
+place_ports P M14
+save_constraints -force
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/utils_1/imports/synth_1/pulse_gen.dcp with file /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/pulse_gen.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Jan 30 17:16:55 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan 30 17:18:00 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/impl_1/runme.log
+current_design synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan 30 17:22:12 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1591 ; free virtual = 24323
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc]
+Finished Parsing XDC File [/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.srcs/constrs_1/new/pulse_gen.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1119 ; free virtual = 24239
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[2] in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1(INIT=2'b01)
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2(INIT=4'b010)
+Compiling module simprims_ver.LUT4(INIT=16'b010101010000000)
+Compiling module xil_defaultlib.pulse_gen
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_time_synth -key {Post-Synthesis:sim_1:Timing:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1233 ; free virtual = 23923
+run 200 ms
+Failure: FIN DE SIMULATION
+Time: 12 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 12 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+run 200 ms
+WARNING: "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /test_pulse_gen/pgen0/P_reg/TChk153_82 at time 12003065 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly)  $setup violation detected. Time: 12003065 ps, Data Event Time Stamp: 9003495 ps, Ref Event Time Stamp: 12002958 ps, Limit: -60 ps
+WARNING: "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /test_pulse_gen/pgen0/P_reg/TChk153_82 at time 12003065 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly)  $hold violation detected. Time: 12003065 ps, Ref Event Time Stamp: 12002958 ps, Data Event Time Stamp: 12003065 ps, Limit: 262 ps
+Failure: FIN DE SIMULATION
+Time: 24 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 24 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1115 ; free virtual = 23807
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1105 ; free virtual = 23798
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+Read Physdb Files: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+Restored from archive | CPU: 0.070000 secs | Memory: -3.799316 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9974.770 ; gain = 0.000 ; free physical = 1120 ; free virtual = 23813
+synth_design -top pulse_gen -part xc7z020clg400-1 -lint 
+Command: synth_design -top pulse_gen -part xc7z020clg400-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 253571
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-344] 'synth_design' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim/test_pulse_gen_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[2] in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_pulse_gen_time_synth.sdf", for root module "test_pulse_gen/pgen0".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1(INIT=2'b01)
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2(INIT=4'b010)
+Compiling module simprims_ver.LUT4(INIT=16'b010101010000000)
+Compiling module xil_defaultlib.pulse_gen
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_time_synth -key {Post-Synthesis:sim_1:Timing:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 10222.848 ; gain = 63.887 ; free physical = 2127 ; free virtual = 24905
+run 200 ms
+Failure: FIN DE SIMULATION
+Time: 12 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 12 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+launch_simulation -mode post-implementation -type timing
+Command: launch_simulation  -mode post-implementation -type timing
+INFO: [Vivado 12-12493] Simulation top is 'test_pulse_gen'
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim/test_pulse_gen_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim/test_pulse_gen_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim/test_pulse_gen_time_impl.v
+INFO: [SIM-utils-37] SDF generated:/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim/test_pulse_gen_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'test_pulse_gen' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim'
+xvlog --incr --relax -prj test_pulse_gen_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim/test_pulse_gen_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_gen
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj test_pulse_gen_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_pulse_gen'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim'
+xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot test_pulse_gen_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.test_pulse_gen xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "test_pulse_gen_time_impl.sdf", for root module "test_pulse_gen/pgen0".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /test_pulse_gen/pgen0/ppulse.cpt_reg[2] in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "test_pulse_gen_time_impl.sdf", for root module "test_pulse_gen/pgen0".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1(INIT=2'b01)
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2(INIT=4'b010)
+Compiling module simprims_ver.LUT4(INIT=16'b010101010000000)
+Compiling module xil_defaultlib.pulse_gen
+Compiling architecture behaviour of entity xil_defaultlib.test_pulse_gen
+Built simulation snapshot test_pulse_gen_time_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp1/tp1-vivado/tp1-vivado.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_pulse_gen_time_impl -key {Post-Implementation:sim_1:Timing:test_pulse_gen} -tclbatch {test_pulse_gen.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_pulse_gen.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_pulse_gen_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 10311.422 ; gain = 88.574 ; free physical = 2036 ; free virtual = 24748
+run 200 ms
+Failure: FIN DE SIMULATION
+Time: 19 us  Iteration: 0  Process: /test_pulse_gen/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd
+$finish called at time : 19 us : File "/nfs/home/m1info2/Documents/vhdl/tp1/test_pulse_gen.vhd" Line 87
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_8
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 30 17:44:49 2025...

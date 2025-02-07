@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../pulse_gen.vhd" \
+"../../../../../test_pulse_gen.vhd" \
+
+# Do not sort compile order
+nosort
