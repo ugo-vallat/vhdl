@@ -98,12 +98,9 @@ begin
   end if;
   
   for idx in vI'high downto vI'low loop
-    if vI(idx)='1' then
-        if vI(idx-1 downto 0)=conv_std_logic_vector(0,idx) then
-            return idx;
-        else
-            return idx+1;
-        end if;
+      if vI(idx) = '1' then
+         result := idx;
+      exit;
     end if;
   end loop;
   -- default

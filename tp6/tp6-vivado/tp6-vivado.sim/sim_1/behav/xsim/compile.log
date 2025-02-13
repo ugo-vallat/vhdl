@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp6/cpu_package.0.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-1471] type error near idx ; current type integer; expected type std_logic_vector [/nfs/home/m1info2/Documents/vhdl/tp6/cpu_package.0.vhd:103]
+ERROR: [VRFC 10-724] found '0' definitions of operator "+", cannot determine exact overloaded matching definition for "+" [/nfs/home/m1info2/Documents/vhdl/tp6/cpu_package.0.vhd:105]
+ERROR: [VRFC 10-9458] unit 'cpu_package' is ignored due to previous errors [/nfs/home/m1info2/Documents/vhdl/tp6/cpu_package.0.vhd:67]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp6/cpu_package.0.vhd' is ignored due to errors

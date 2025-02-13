@@ -34,3 +34,9 @@ update_compile_order -fileset sim_1
 update_compile_order -fileset sim_1
 add_files -norecurse /nfs/home/m1info2/Documents/vhdl/tp6/rom_file.0.txt
 update_compile_order -fileset sources_1
+launch_simulation
+add_files -fileset utils_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp6/memory_synth.pre.tcl
+set_property STEPS.SYNTH_DESIGN.TCL.PRE [ get_files /nfs/home/m1info2/Documents/vhdl/tp6/memory_synth.pre.tcl -of [get_fileset utils_1] ] [get_runs synth_1]
+launch_simulation
+launch_simulation
+add_files -norecurse /nfs/home/m1info2/Documents/vhdl/tp6/cpu_package.0.vhd
