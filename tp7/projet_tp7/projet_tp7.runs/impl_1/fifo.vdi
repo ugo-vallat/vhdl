@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Feb 14 10:39:37 2025
+# Process ID: 414703
+# Current directory: /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/impl_1
+# Command line: vivado -log fifo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fifo.tcl -notrace
+# Log file: /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/impl_1/fifo.vdi
+# Journal file: /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/impl_1/vivado.jou
+# Running On        :secil3.siame.univ-tlse3.fr
+# Platform          :Fedora
+# Operating System  :Fedora Linux 40 (Forty)
+# Processor Detail  :Intel(R) Core(TM) i7-10700T CPU @ 2.00GHz
+# CPU Frequency     :3799.874 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16454 MB
+# Swap memory       :16888 MB
+# Total Virtual     :33343 MB
+# Available Virtual :30535 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/nfs/xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+source fifo.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1639.602 ; gain = 74.883 ; free physical = 8661 ; free virtual = 28258
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/xilinx/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2024.1/data/ip'.
+Command: link_design -top fifo -part xc7z010iclg225-1L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Device 21-9227] Part: xc7z010iclg225-1L does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.020 ; gain = 0.000 ; free physical = 7961 ; free virtual = 27571
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2062.742 ; gain = 0.000 ; free physical = 7886 ; free virtual = 27495
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2063.742 ; gain = 0.000 ; free physical = 7886 ; free virtual = 27495
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2063.742 ; gain = 418.203 ; free physical = 7886 ; free virtual = 27495
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010i'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.9 ; elapsed = 00:00:00.61 . Memory (MB): peak = 2185.273 ; gain = 121.531 ; free physical = 7823 ; free virtual = 27434
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 118ede755
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2674.070 ; gain = 488.797 ; free physical = 7414 ; free virtual = 27024
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Phase 1 Initialization | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Phase 2 Timer Update And Timing Data Collection | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Retarget | Checksum: 118ede755
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 118ede755
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Constant propagation | Checksum: 118ede755
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 16f3d5bb2
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2986.906 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Sweep | Checksum: 16f3d5bb2
+INFO: [Opt 31-389] Phase Sweep created 31 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 16f3d5bb2
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+BUFG optimization | Checksum: 16f3d5bb2
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 16f3d5bb2
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+Shift Register Optimization | Checksum: 16f3d5bb2
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 16f3d5bb2
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+Post Processing Netlist | Checksum: 16f3d5bb2
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3018.922 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+Phase 9 Finalization | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |              31  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3018.922 ; gain = 32.016 ; free physical = 7076 ; free virtual = 26687
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3018.922 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3018.922 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3018.922 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+Ending Netlist Obfuscation Task | Checksum: 1f5dbcaba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3018.922 ; gain = 0.000 ; free physical = 7076 ; free virtual = 26687
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3018.922 ; gain = 955.180 ; free physical = 7076 ; free virtual = 26687
+INFO: [Vivado 12-24828] Executing command : report_drc -file fifo_drc_opted.rpt -pb fifo_drc_opted.pb -rpx fifo_drc_opted.rpx
+Command: report_drc -file fifo_drc_opted.rpt -pb fifo_drc_opted.pb -rpx fifo_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/impl_1/fifo_drc_opted.rpt.
+report_drc completed successfully
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3058.941 ; gain = 0.000 ; free physical = 7070 ; free virtual = 26682
+INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/impl_1/fifo_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010i'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3106.965 ; gain = 0.000 ; free physical = 7055 ; free virtual = 26668
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 113c43f0b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3106.965 ; gain = 0.000 ; free physical = 7055 ; free virtual = 26668
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3106.965 ; gain = 0.000 ; free physical = 7055 ; free virtual = 26668
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (70) is greater than number of available pins (54).
+The following are banks with available pins: 
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    46 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |     8 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |    54 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: cc4cc73a
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3106.965 ; gain = 0.000 ; free physical = 7036 ; free virtual = 26651
+Phase 1 Placer Initialization | Checksum: cc4cc73a
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3106.965 ; gain = 0.000 ; free physical = 7036 ; free virtual = 26651
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: cc4cc73a
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3106.965 ; gain = 0.000 ; free physical = 7036 ; free virtual = 26651
+43 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 14 10:40:06 2025...

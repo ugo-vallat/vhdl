@@ -34,7 +34,7 @@ architecture behavior of test_fifo is
 
 -- definition des constantes
 	constant W_DATA	: positive:=4; -- taille du bus de donnes
-	constant W_ADR		: positive:=2; -- taille du bus d'adresse, soit 2**W_ADR mots
+	constant W_ADR		: positive:=2;-- taille du bus d'adresse, soit 2**W_ADR mots
 --	constant RWFRONT 	: std_logic := '0'; -- front actif pour lecture/ecriture
 	constant TIMEOUT 	: time := 300 ns; -- timeout de la simulation
 

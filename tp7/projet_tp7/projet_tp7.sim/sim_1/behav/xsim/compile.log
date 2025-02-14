@@ -1,4 +1,6 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'fifo'
-INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+ERROR: [VRFC 10-4982] syntax error near '/=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:175]
+ERROR: [VRFC 10-4982] syntax error near '=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:179]
+ERROR: [VRFC 10-4982] syntax error near 'if' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:184]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd' is ignored due to errors

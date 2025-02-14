@@ -3,23 +3,23 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Feb 13 16:43:17 2025
-# Process ID: 6158
+# Start of session at: Fri Feb 14 10:09:21 2025
+# Process ID: 403429
 # Current directory: /nfs/home/m1info2/Documents/vhdl/tp7
 # Command line: vivado
 # Log file: /nfs/home/m1info2/Documents/vhdl/tp7/vivado.log
 # Journal file: /nfs/home/m1info2/Documents/vhdl/tp7/vivado.jou
-# Running On        :secil1.siame.univ-tlse3.fr
+# Running On        :secil3.siame.univ-tlse3.fr
 # Platform          :Fedora
 # Operating System  :Fedora Linux 40 (Forty)
 # Processor Detail  :Intel(R) Core(TM) i7-10700T CPU @ 2.00GHz
-# CPU Frequency     :3765.284 MHz
+# CPU Frequency     :3799.515 MHz
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16454 MB
 # Swap memory       :16888 MB
 # Total Virtual     :33343 MB
-# Available Virtual :31431 MB
+# Available Virtual :31605 MB
 #-----------------------------------------------------------
 start_gui
 Sourcing tcl script '/nfs/xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
@@ -102,45 +102,946 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /nfs/xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-100/E.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-100/E.0/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-35/E.0/1.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-a7-35/E.0/1.1/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/arty/C.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/basys3/C.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-15t:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/cmod_a7-15t/B.0/board.xml as part xc7a15tcpg236-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-35t:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/cmod_a7-35t/B.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-100t/D.0/1.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-100t/D.0/1.3/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-50t/D.0/1.0/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.3 available at /nfs/xilinx/vivado-boards/new/board_files/nexys-a7-50t/D.0/1.3/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys4/B.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4_ddr:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys4_ddr/C.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.1 available at /nfs/xilinx/vivado-boards/new/board_files/nexys_video/A.0/1.1/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.2 available at /nfs/xilinx/vivado-boards/new/board_files/nexys_video/A.0/1.2/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /nfs/xilinx/vivado-boards/new/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-create_project projet_tp7 /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7 -part xc7z010iclg225-1L
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2024.1/data/ip'.
-set_property  ip_repo_paths  /nfs/xilinx/vivado-library [current_project]
-update_ip_catalog
+open_project /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/xilinx/vivado-library'.
-set_property target_language VHDL [current_project]
-add_files -norecurse /nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 8097.543 ; gain = 230.203 ; free physical = 10040 ; free virtual = 29442
 update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 205 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 215 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 215 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 8262.324 ; gain = 99.336 ; free physical = 9824 ; free virtual = 29322
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 3) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 245 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 255 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 255 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8378.414 ; gain = 4.855 ; free physical = 9708 ; free virtual = 29232
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4)\]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 3) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 245 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 255 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 255 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_runs synth_1 -jobs 8
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Fri Feb 14 10:38:48 2025] Launched synth_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Feb 14 10:39:35 2025] Launched impl_1...
+Run output will be captured here: /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Device 21-9227] Part: xc7z010iclg225-1L does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8637.578 ; gain = 0.000 ; free physical = 9010 ; free virtual = 28592
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8745.445 ; gain = 0.000 ; free physical = 8904 ; free virtual = 28487
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 9035.547 ; gain = 601.711 ; free physical = 8707 ; free virtual = 28300
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=8,abus_width=3)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 3) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 245 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 255 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 255 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9356.484 ; gain = 0.000 ; free physical = 8712 ; free virtual = 28331
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 145
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=8,abus_width=3)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 148
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 9444.133 ; gain = 11.996 ; free physical = 8653 ; free virtual = 28269
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 167
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 169
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 171
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 173
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 174
+step
+Stopped at time : 65 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 60
+step
+Stopped at time : 65 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 61
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 145
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 145
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 146
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 146
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 76
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 104
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 96
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+ERROR: [VRFC 10-4982] syntax error near ';' [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:36]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:49]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:75]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:104]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:121]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:128]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:133]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:141]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:146]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:159]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:173]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:183]
+ERROR: [VRFC 10-2989] 'w_data' is not declared [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:205]
+ERROR: [VRFC 10-9458] unit 'behavior' is ignored due to previous errors [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:33]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4,abus_width=2)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 76
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 9454.133 ; gain = 10.000 ; free physical = 8570 ; free virtual = 28189
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 77
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 88
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 90
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 94
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 95
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 96
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 97
+step
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 118
+run all
+Stopped at time : 40 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 96
+run all
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 76
+run all
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 148
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 104
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 96
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 76
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4,abus_width=2)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag still set (or others wrong) !
+Time: 35 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 205 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 215 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 215 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 9468.145 ; gain = 7.992 ; free physical = 8606 ; free virtual = 28227
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4,abus_width=3)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Empty flag still set (or others wrong) !
+Time: 35 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: First element READ is wrong (must be 1) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 3) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 225 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 235 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 235 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9471.148 ; gain = 3.004 ; free physical = 8590 ; free virtual = 28208
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4,abus_width=3)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 3) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 245 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 255 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 255 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9524.160 ; gain = 10.000 ; free physical = 8585 ; free virtual = 28203
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4,abus_width=2)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 205 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 215 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 215 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
@@ -199,12 +1100,6 @@ source test_fifo.tcl
 #   }
 # }
 # run 1000ns
-Error: Empty flag not set (or others wrong) !
-Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
-Error: Empty flag not set (or others wrong) !
-Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
-Error: First element READ is wrong (must be 1) !
-Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
 Error: Mid flag not set (or others wrong) !
 Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
 Error: Full flag not set (or others wrong) !
@@ -220,8 +1115,512 @@ Time: 215 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/
 $finish called at time : 215 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 8858.797 ; gain = 145.578 ; free physical = 9717 ; free virtual = 28943
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9562.176 ; gain = 7.988 ; free physical = 8501 ; free virtual = 28124
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 146
+run all
+Stopped at time : 230 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+step
+Stopped at time : 230 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 167
+run all
+Stopped at time : 240 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 250 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 13 17:45:37 2025...
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 20 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 40 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 50 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Stopped at time : 80 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 90 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+step
+Stopped at time : 90 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 147
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 20 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 40 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 50 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 147
+run all
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 147
+step
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 167
+run all
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Stopped at time : 80 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/test_fifo/fifo1}} 
+current_wave_config {Untitled 13}
+Untitled 13
+log_wave -r {/test_fifo/fifo1} 
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/test_fifo/fifo1/CLK}} {{/test_fifo/fifo1/RST}} {{/test_fifo/fifo1/REN}} {{/test_fifo/fifo1/WEN}} {{/test_fifo/fifo1/DI}} {{/test_fifo/fifo1/DO}} {{/test_fifo/fifo1/EMPTY}} {{/test_fifo/fifo1/MID}} {{/test_fifo/fifo1/FULL}} {{/test_fifo/fifo1/REGS}} {{/test_fifo/fifo1/W_ADR}} {{/test_fifo/fifo1/R_ADR}} {{/test_fifo/fifo1/DBUS_WIDTH}} {{/test_fifo/fifo1/ABUS_WIDTH}} 
+current_wave_config {Untitled 13}
+Untitled 13
+log_wave {/test_fifo/fifo1/CLK} {/test_fifo/fifo1/RST} {/test_fifo/fifo1/REN} {/test_fifo/fifo1/WEN} {/test_fifo/fifo1/DI} {/test_fifo/fifo1/DO} {/test_fifo/fifo1/EMPTY} {/test_fifo/fifo1/MID} {/test_fifo/fifo1/FULL} {/test_fifo/fifo1/REGS} {/test_fifo/fifo1/W_ADR} {/test_fifo/fifo1/R_ADR} {/test_fifo/fifo1/DBUS_WIDTH} {/test_fifo/fifo1/ABUS_WIDTH} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run all
+Stopped at time : 20 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 20 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/test_fifo/fifo1/CLK}} {{/test_fifo/fifo1/RST}} {{/test_fifo/fifo1/REN}} {{/test_fifo/fifo1/WEN}} {{/test_fifo/fifo1/DI}} {{/test_fifo/fifo1/DO}} {{/test_fifo/fifo1/EMPTY}} {{/test_fifo/fifo1/MID}} {{/test_fifo/fifo1/FULL}} {{/test_fifo/fifo1/REGS}} {{/test_fifo/fifo1/W_ADR}} {{/test_fifo/fifo1/R_ADR}} {{/test_fifo/fifo1/DBUS_WIDTH}} {{/test_fifo/fifo1/ABUS_WIDTH}} 
+run all
+Stopped at time : 30 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 40 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 50 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+run all
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 167
+step
+Stopped at time : 60 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 169
+run all
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 146
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 147
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 146
+step
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 147
+step
+Stopped at time : 70 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" Line 167
+run all
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 205 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 215 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 215 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+run all
+Error: Mid flag not set (or others wrong) !
+Time: 295 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: TIMEOUT SIMULATION !!!
+Time: 300 ns  Iteration: 0  Process: /test_fifo/P_TIMEOUT  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 300 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 69
+run all
+Error: Full flag not set (or others wrong) !
+Time: 315 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 335 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 355 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 425 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 435 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 435 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+run all
+Error: Mid flag not set (or others wrong) !
+Time: 515 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 535 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 555 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 575 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: TIMEOUT SIMULATION !!!
+Time: 600 ns  Iteration: 0  Process: /test_fifo/P_TIMEOUT  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 600 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 69
+run all
+Error: Q output must be high impedance !
+Time: 645 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 655 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 655 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_fifo'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /nfs/xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot test_fifo_behav xil_defaultlib.test_fifo -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.fifo [\fifo(dbus_width=4,abus_width=2)...]
+Compiling architecture behavior of entity xil_defaultlib.test_fifo
+Built simulation snapshot test_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_fifo_behav -key {Behavioral:sim_1:Functional:test_fifo} -tclbatch {test_fifo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test_fifo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 205 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 215 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
+$finish called at time : 215 ns : File "/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd" Line 220
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_fifo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9585.387 ; gain = 4.996 ; free physical = 8484 ; free virtual = 28103
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+ERROR: [VRFC 10-4982] syntax error near 'if' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:174]
+ERROR: [VRFC 10-4982] syntax error near '/=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:175]
+ERROR: [VRFC 10-4982] syntax error near 'else' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:178]
+ERROR: [VRFC 10-4982] syntax error near '=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:179]
+ERROR: [VRFC 10-4982] syntax error near 'if' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:183]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+ERROR: [VRFC 10-4982] syntax error near '/=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:175]
+ERROR: [VRFC 10-4982] syntax error near '=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:179]
+ERROR: [VRFC 10-4982] syntax error near 'if' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:184]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_fifo'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/nfs/xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_fifo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj test_fifo_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo'
+ERROR: [VRFC 10-4982] syntax error near '/=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:175]
+ERROR: [VRFC 10-4982] syntax error near '=' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:179]
+ERROR: [VRFC 10-4982] syntax error near 'if' [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:184]
+INFO: [VRFC 10-8704] VHDL file '/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd:]

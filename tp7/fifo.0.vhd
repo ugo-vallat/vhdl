@@ -22,7 +22,7 @@ entity fifo is
 		DBUS_WIDTH : natural := 32;
 
 		-- largeur du bus adr R/W pour acces fifo
-		ABUS_WIDTH : natural := 3 );	-- soit 2**3 emplacements
+		ABUS_WIDTH : natural := 5 );	-- soit 2**3 emplacements
 
 	-- definition des entrees/sorties
 	port 	(
@@ -99,7 +99,7 @@ begin
                 DO <=(others => '0');
               end if;
 		  else
-            if WEN = '0' then
+            if WEN = '0' and EMPTY = '0' then
                if W_ADR = R_ADR then
                   R_ADR <= R_ADR + '1';
                end if;
@@ -118,13 +118,13 @@ begin
 	if rising_edge(CLK) then
 		-- test du RST
 		if RST='0' then
-			EMPTY <= '0';
-        elsif EMPTY = '0' and REN = '0' and WEN = '1' then
-          if W_ADR = (R_ADR + '1') then
+			EMPTY <= '1';
+        elsif EMPTY = '0' then
+          if WEN = '1' and REN = '0' and W_ADR = (R_ADR + '1') then
             EMPTY <= '1';
           end if;
         else
-		    if WEN = '0' and REN = '1' then
+		    if WEN = '0' then
 		       EMPTY <= '0';
 		    end if;  
 		end if;
@@ -143,7 +143,7 @@ begin
             FULL <= '0';
         else
             if FULL = '0' then
-                if WEN = '0' and REN = '1' then
+                if EMPTY = '0' and WEN = '0' and REN = '1' then
                     if R_ADR = (W_ADR + '1') then
                         FULL <= '1';
                     end if;
@@ -168,12 +168,19 @@ begin
 		-- test du RST
 		if RST='0' then
             MID <= '0';
-        elsif MID = '1' and REN = '0' and WEN = '1' then
-            MID <= '0';
-        elsif MID = '0' and REN = '1' and WEN = '0' then
-            MID <= '0';
         else
-            MID <= '0';
+            temp_W := W_ADR + '1';
+            if REN /= WEN then
+                if WEN = '0' then 
+                    if R_ADR[R_ADR'high] /= temp_W[W_ADR'high] and R_ADR[R_ADR'high-1 downto 0] = temp_W[W_ADR'high-1 downto 0] then
+                        MID <= '1';
+                    end if;
+                else
+                    if R_ADR[R_ADR'high] == W_ADR[W_ADR'high] or R_ADR[R_ADR'high-1 downto 0] >= W_ADR[W_ADR'high-1 downto 0] then
+                        MID <= '0';
+                    end if;
+                end if;
+            end if;
 		end if;
 	end if;
 end process P_MID;

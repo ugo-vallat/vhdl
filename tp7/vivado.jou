@@ -3,37 +3,168 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Feb 13 16:43:17 2025
-# Process ID: 6158
+# Start of session at: Fri Feb 14 10:09:21 2025
+# Process ID: 403429
 # Current directory: /nfs/home/m1info2/Documents/vhdl/tp7
 # Command line: vivado
 # Log file: /nfs/home/m1info2/Documents/vhdl/tp7/vivado.log
 # Journal file: /nfs/home/m1info2/Documents/vhdl/tp7/vivado.jou
-# Running On        :secil1.siame.univ-tlse3.fr
+# Running On        :secil3.siame.univ-tlse3.fr
 # Platform          :Fedora
 # Operating System  :Fedora Linux 40 (Forty)
 # Processor Detail  :Intel(R) Core(TM) i7-10700T CPU @ 2.00GHz
-# CPU Frequency     :3765.284 MHz
+# CPU Frequency     :3799.515 MHz
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16454 MB
 # Swap memory       :16888 MB
 # Total Virtual     :33343 MB
-# Available Virtual :31431 MB
+# Available Virtual :31605 MB
 #-----------------------------------------------------------
 start_gui
-create_project projet_tp7 /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7 -part xc7z010iclg225-1L
-set_property  ip_repo_paths  /nfs/xilinx/vivado-library [current_project]
-update_ip_catalog
-set_property target_language VHDL [current_project]
-add_files -norecurse /nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /nfs/home/m1info2/Documents/vhdl/tp7/test_fifo.0.vhd
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-update_compile_order -fileset sources_1
+open_project /nfs/home/m1info2/Documents/vhdl/tp7/projet_tp7/projet_tp7.xpr
 update_compile_order -fileset sources_1
 launch_simulation
 source test_fifo.tcl
 close_sim
+launch_simulation
+source test_fifo.tcl
+close_sim
+launch_simulation
+source test_fifo.tcl
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source test_fifo.tcl
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 145
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 145
+close_sim
+launch_simulation
+source test_fifo.tcl
+step
+step
+step
+step
+step
+step
+step
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 145
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 145
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 146
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 146
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 76
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 104
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 96
+close_sim
+launch_simulation
+launch_simulation
+source test_fifo.tcl
+step
+step
+step
+step
+step
+step
+step
+step
+run all
+run all
+run all
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 104
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 96
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 76
+close_sim
+launch_simulation
+source test_fifo.tcl
+close_sim
+launch_simulation
+source test_fifo.tcl
+close_sim
+launch_simulation
+source test_fifo.tcl
+close_sim
+launch_simulation
+source test_fifo.tcl
+close_sim
+launch_simulation
+source test_fifo.tcl
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 148
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 146
+run all
+step
+run all
+run all
+close_sim
+launch_simulation
+source test_fifo.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+step
+close_sim
+launch_simulation
+source test_fifo.tcl
+run all
+run all
+run all
+run all
+run all
+add_bp {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} 147
+run all
+step
+run all
+current_wave_config {Untitled 13}
+add_wave {{/test_fifo/fifo1}} 
+current_wave_config {Untitled 13}
+log_wave -r {/test_fifo/fifo1} 
+current_wave_config {Untitled 13}
+add_wave {{/test_fifo/fifo1/CLK}} {{/test_fifo/fifo1/RST}} {{/test_fifo/fifo1/REN}} {{/test_fifo/fifo1/WEN}} {{/test_fifo/fifo1/DI}} {{/test_fifo/fifo1/DO}} {{/test_fifo/fifo1/EMPTY}} {{/test_fifo/fifo1/MID}} {{/test_fifo/fifo1/FULL}} {{/test_fifo/fifo1/REGS}} {{/test_fifo/fifo1/W_ADR}} {{/test_fifo/fifo1/R_ADR}} {{/test_fifo/fifo1/DBUS_WIDTH}} {{/test_fifo/fifo1/ABUS_WIDTH}} 
+current_wave_config {Untitled 13}
+log_wave {/test_fifo/fifo1/CLK} {/test_fifo/fifo1/RST} {/test_fifo/fifo1/REN} {/test_fifo/fifo1/WEN} {/test_fifo/fifo1/DI} {/test_fifo/fifo1/DO} {/test_fifo/fifo1/EMPTY} {/test_fifo/fifo1/MID} {/test_fifo/fifo1/FULL} {/test_fifo/fifo1/REGS} {/test_fifo/fifo1/W_ADR} {/test_fifo/fifo1/R_ADR} {/test_fifo/fifo1/DBUS_WIDTH} {/test_fifo/fifo1/ABUS_WIDTH} 
+restart
+run all
+close_sim
+launch_simulation
+source test_fifo.tcl
+current_wave_config {Untitled 14}
+add_wave {{/test_fifo/fifo1/CLK}} {{/test_fifo/fifo1/RST}} {{/test_fifo/fifo1/REN}} {{/test_fifo/fifo1/WEN}} {{/test_fifo/fifo1/DI}} {{/test_fifo/fifo1/DO}} {{/test_fifo/fifo1/EMPTY}} {{/test_fifo/fifo1/MID}} {{/test_fifo/fifo1/FULL}} {{/test_fifo/fifo1/REGS}} {{/test_fifo/fifo1/W_ADR}} {{/test_fifo/fifo1/R_ADR}} {{/test_fifo/fifo1/DBUS_WIDTH}} {{/test_fifo/fifo1/ABUS_WIDTH}} 
+run all
+run all
+run all
+run all
+step
+step
+run all
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 148
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 147
+remove_bps -file {/nfs/home/m1info2/Documents/vhdl/tp7/fifo.0.vhd} -line 146
+step
+step
+run all
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+source test_fifo.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+close_design
+launch_simulation
+launch_simulation
